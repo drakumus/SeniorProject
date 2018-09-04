@@ -91,7 +91,7 @@ namespace SeniorProjectMVC
 
         public static void WriteToFile(string FileName, Set set)
         {
-            using (Stream s = File.Open(FileName, FileMode.OpenOrCreate))
+            using (Stream s = File.Open(FileName, FileMode.Create))
             {
                 using (StreamWriter sw = new StreamWriter(s))
                 {
